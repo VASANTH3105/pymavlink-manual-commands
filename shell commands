@@ -1,0 +1,10 @@
+python3 pymavlinkcmds.py 
+pip install pymavlink
+/dev/ttyACM*
+pip install serial
+pip3 install mavproxy
+sudo chmod a+rw /dev/ttyACM1
+ls -l /dev/ttyACM*
+sudo python3 newcmd.py 
+sudo pip3 install mavproxy
+sudo python3 newcmd.py
