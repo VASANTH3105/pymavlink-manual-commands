@@ -64,8 +64,7 @@ def move_forward(lat, lon, alt, speed):
         0,
         0
     )
-
-
+   
 master = mavutil.mavlink_connection('/dev/ttyACM0', baud=115200)
 print("Waiting for heartbeat...")
 master.wait_heartbeat()
@@ -79,6 +78,8 @@ time.sleep(3)
 
 while True:
 	move_forward(lat=11.500032, log=77.276880, alt=0, speed=2)
+	
+	
 
 
 
