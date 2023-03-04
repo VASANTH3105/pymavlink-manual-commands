@@ -136,7 +136,7 @@ class AUV:
         self._logger.info("Moving right...")
         self.stop_motion()
         self._thread_list[3].start()
-
+'''
     def turn_cam_left(self):
         self._logger.info("Turning camera left...")
         # self._master.param_set_send(
@@ -186,7 +186,7 @@ class AUV:
             1400,
             0, 0, 0, 0, 0,
         )
-
+'''
     def set_mode(self, mode):
         self._logger.info("Setting mode...")
         if mode not in self._master.mode_mapping():
@@ -195,7 +195,7 @@ class AUV:
         mode_id = self._master.mode_mapping()[mode]
         self._master.set_mode(mode_id)
         self._logger.info("Mode set to %s", mode)
-
+'''
     def set_depth(self, depth):
         boot_time = time.time()
         self._logger.info("Setting target depth to %s", depth)
@@ -219,3 +219,4 @@ class AUV:
             afx=0, afy=0, afz=0, yaw=0, yaw_rate=0
         )
         self._logger.info("Target depth set to %s", depth)
+ '''
