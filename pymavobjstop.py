@@ -80,7 +80,7 @@ class VyuhaController:
         return self.running or (self.thread and self.thread.is_alive())
 
 # Usage example
-controller = VyuhaController('/dev/ttyACM1')
+controller = VyuhaController('/dev/ttyACM0')
 controller.wait_heartbeat()
 controller.arm_motors()
 
